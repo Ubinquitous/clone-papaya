@@ -1,23 +1,28 @@
 import React from 'react';
+import { HeaderDiv, HeaderInput, HeaderInputWrap, HeaderSearch, HeaderText, HeaderWrap } from '../styles/Header';
 
 const Header = () => {
+
+
     return (
-        <div className='header'>
-            <div className='header-wrap'>
-                <div className='header-text'>
-                    <h1>Papaya</h1>
-                </div>
-                <div className='input-wrap'>
-                    <form>
-                        <input type='text' />
-                    </form>
-                </div>
-            </div>
-            <style jsx>{`
-                @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-               
-            `}</style>
-        </div>
+        <HeaderWrap>
+            <HeaderDiv>
+                <HeaderText>Papaya music</HeaderText>
+                <HeaderInputWrap>
+                    <HeaderInput type='text' placeholder='Search your artist.' />
+                    <HeaderSearch>
+                        <picture style={{ backgroundColor: 'transparent' }}>
+                            <img src='https://cdn-icons-png.flaticon.com/512/149/149852.png' alt=''
+                                style={{
+                                    width: '18px',
+                                    height: '18px',
+                                    backgroundColor: 'transparent'
+                                }} />
+                        </picture>
+                    </HeaderSearch>
+                </HeaderInputWrap>
+            </HeaderDiv>
+        </HeaderWrap>
     );
 };
 
