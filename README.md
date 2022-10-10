@@ -1,7 +1,7 @@
 ## Papaya Clone coding
 #### How to Run
 $ git clone https://github.com/Ubinquitous/clone-papaya.git  
-$ npm install yarn  
+$ npm install yarn (yarn이 설치되어 있지 않을 경우)
 $ yarn install  
 $ yarn run dev  
 http://localhost:3000로 접속하기  
