@@ -18,7 +18,7 @@ const Header = () => {
 
     const onSearchClick = () => {
         router.push(`/detail/${artist}`)
-        setArtist('');
+        setArtist('')
     }
 
     return (
