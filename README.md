@@ -4,7 +4,8 @@ $ git clone https://github.com/Ubinquitous/clone-papaya.git
 $ npm install yarn  
 $ yarn install  
 $ yarn run dev  
-Go to http://localhost:3000
+http://localhost:3000로 접속하기  
+\* 이미지를 불러오고 싶으시면, 따로 카카오 디벨로퍼에서 REST API KEY를 받아 env 파일에 추가하셔야 합니다 *
 
 #### Respect [@SEOKKAMONI](https://github.com/SEOKKAMONI)  
 #### Original Link : [Click Me](https://github.com/SEOKKAMONI/Music-service-Web)
