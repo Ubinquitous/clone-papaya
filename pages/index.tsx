@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Chart, ChartBoxDiv, ChartBoxText, ChartBoxWrap, Charts, ChartSubText, ChartText, RankText } from '../styles/Chart';
 import { Artist } from '../types/artist';
 import { Track } from '../types/track';
+import Link from 'next/link';
 
 const App = () => {
 
@@ -43,7 +44,7 @@ const App = () => {
                   justifyContent: 'center'
                 }}>
                 <Chart>
-                  <ChartText>{artist.name}<RankText>{index + 1}</RankText></ChartText>
+                  <ChartText><Link href={`/detail/${artist.name}`}><a style={{ backgroundColor: 'transparent' }}>{artist.name}</a></Link><RankText>{index + 1}</RankText></ChartText>
                   <ChartSubText>Listeners : {artist.listeners}</ChartSubText>
                   <ChartSubText>PlayCount : {artist.playcount}</ChartSubText>
                 </Chart>
@@ -65,7 +66,7 @@ const App = () => {
                   justifyContent: 'center'
                 }}>
                 <Chart>
-                  <ChartText>{track.name} - {track.artist.name}<RankText>{index + 1}</RankText></ChartText>
+                  <ChartText><Link href={`/detail/${track.artist.name}`}><a style={{ backgroundColor: 'transparent' }}>{track.name} - {track.artist.name}</a></Link><RankText>{index + 1}</RankText></ChartText>
                   <ChartSubText>Listeners : {track.listeners}</ChartSubText>
                   <ChartSubText>PlayCount : {track.playcount}</ChartSubText>
                 </Chart>
