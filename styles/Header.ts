@@ -71,11 +71,12 @@ const HeaderSearch = styled.button`
     align-items: center;
 `;
 
+
 export {
     HeaderDiv,
     HeaderWrap,
     HeaderText,
     HeaderInputWrap,
     HeaderInput,
-    HeaderSearch
+    HeaderSearch,
 };
